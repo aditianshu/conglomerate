@@ -50,7 +50,7 @@ export default function RegisterForm() {
     validationSchema: RegisterSchema,
     onSubmit: () => {
       console.log(values)
-      //registerWithEmailAndPassword(values.firstName + values.lastName, values.email, values.password, values.role);
+      registerWithEmailAndPassword(values.firstName + values.lastName, values.email, values.password, values.role);
       navigate('/dashboard', { replace: true });
     }
   });
